@@ -1,0 +1,65 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50vw;
+    background-color: black;
+    gap: 100px;
+  }
+  .right{
+    height: 100%;
+    width: 50vw;
+
+  }
+  /* date */
+  .container-clock {
+    /* 置中 */
+    background-color: transparent;
+    border: 3px solid lightgreen;
+    color: lightgreen;
+    width: 340px;
+    padding: 10px;
+    border-radius: 40px;
+    transition: 0.5s;
+    
+    }
+    
+    .container-clock:hover {
+    background-color: lightgreen;
+    color: black;
+    box-shadow: 0 0 30px lightgreen;
+    }
+    
+    .time {
+    font-size: 50px;
+    font-weight: 600px;
+    text-align: center;
+    }
+    
+    .date {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    }
+    
+    #period {
+    font-size: 20px;
+    }
+
+  

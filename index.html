@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./style.css" rel="stylesheet">
+  <script defer src="./main.js"></script>
+  <title>weather APP</title>
+</head>
+<body onload="startTime()">
+<div class="left"  >
+	<h2>Dynamic drop down select menu</h2>
+	<div class="placeholder">
+		<p>
+			Selected country: <span id="country"></span>
+		</p>
+		<p>
+			Selected city: <span id="city"></span>
+		</p>
+	</div>
+
+
+	<h3>Please select your country and city</h3>
+	<form>
+	    <select onchange="getCities(this.value)" name="countries">
+	        <option value="">Choose a country</option>
+	        <option value="England">England</option>
+	        <option value="France">France</option>
+	        <option value="Spain">Spain</option>
+	        <option value="Germany">Germany</option>
+	    </select>
+
+	    <select onchange="getCity(this.value)" name="cities" id="cities" disabled>
+	        <option value="">Choose a city</option>
+	    </select>
+
+      <select onchange="getCity(this.value)" name="cities" id="cities" disabled>
+        <option value="">Choose a city</option>
+    </select>
+	</form>
+
+
+</div>
+<div class="right">
+  
+	<h2>Dynamic drop down select menu</h2>
+	<div class="placeholder">
+		<p>
+			Selected country: <span id="country"></span>
+		</p>
+		<p>
+			Selected city: <span id="city"></span>
+		</p>
+	</div>
+
+
+	<h3>Please select your country and city</h3>
+	<form>
+	    <select onchange="getCities(this.value)" name="countries">
+	        <option value="">Choose a country</option>
+	        <option value="England">England</option>
+	        <option value="France">France</option>
+	        <option value="Spain">Spain</option>
+	        <option value="Germany">Germany</option>
+	    </select>
+
+	    <select onchange="getCity(this.value)" name="cities" id="cities" disabled>
+	        <option value="">Choose a city</option>
+	    </select>
+	</form>
+</div>
+
+
+
+
+<!-- <div class="container-clock">
+  <div class="datetime">
+  <div class="time">
+  <span id="hour">00</span>:
+  <span id="minutes">00</span>:
+  <span id="seconds">00</span>
+  <span id="period">AM</span>
+  </div>
+  <div class="date">
+  <span id="dayname">星期</span>,
+  <span id="month">月</span>
+  <span id="daynum">00</span>日,
+  <span id="year">year</span>年
+  </div>
+  </div>
+  </div> -->
+
+</body>
+</html>
